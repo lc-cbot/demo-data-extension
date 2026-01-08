@@ -48,12 +48,45 @@ ext.request("ext-playbook", "run_playbook", {
 })
 ```
 
+### Run locally with Flask (development)
+```bash
+pip install -r requirements.txt
+python main.py
+# Server runs on http://localhost:8080
+```
+
+### Deploy to GCP Cloud Run
+```bash
+# Set your GCP project
+export PROJECT_ID="your-gcp-project"
+export REGION="us-central1"
+
+# Build and deploy in one command
+gcloud run deploy demo-data-extension \
+  --source . \
+  --region $REGION \
+  --allow-unauthenticated \
+  --memory 256Mi \
+  --timeout 300
+```
+
+### Call the Cloud Run service
+```bash
+# POST to /load endpoint
+curl -X POST "https://demo-data-extension-XXXXX-uc.a.run.app/load" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "template_url": "https://example.com/template.json",
+    "webhook_url": "https://[hook].hook.limacharlie.io/[oid]/[name]/[secret]"
+  }'
+```
+
 ## Architecture
 
 ```
 JSON Template (with {{ date }} placeholders)
     ↓
-Template Processor (log_template_processor.py or playbook)
+Template Processor (CLI, Cloud Run, or LimaCharlie Playbook)
     ↓ Fills dates (spread across 7 days), renders Jinja2
     ↓
 Webhook (flat JSON POST per event)
@@ -62,6 +95,14 @@ D&R Rules (match on event/FIELD_NAME paths)
     ↓
 Detections/Alerts
 ```
+
+### Deployment Options
+
+| Option | Use Case |
+|--------|----------|
+| CLI (`log_template_processor.py`) | Local testing, one-off runs |
+| Cloud Run (`main.py`) | Scheduled jobs, API-triggered, production |
+| LimaCharlie Playbook | Triggered by D&R rules, org-specific |
 
 ### Critical Design Constraint
 
@@ -110,16 +151,19 @@ Not `event/events/0/COMMAND_LINE` (nested arrays don't work).
 
 | File | Purpose |
 |------|---------|
-| `log_template_processor.py` | Standalone CLI tool - processes templates, sends to webhooks |
-| `demo_data_loader_playbook.py` | LimaCharlie playbook version (deployed to ext-playbook) |
+| `main.py` | Flask app for Cloud Run deployment |
+| `log_template_processor.py` | Core logic + standalone CLI tool |
+| `Dockerfile` | Container definition for Cloud Run |
+| `requirements.txt` | Python dependencies |
+| `demo_data_loader_playbook.py` | LimaCharlie playbook version |
 | `demo_dr_rules.yaml` | 10 D&R rules matching demo events |
 | `lc_events_simple_template.json` | 50-event simplified template |
 | `lc_events_template.json` | 50-event full LC event format |
 
 ## Dependencies
 
-- Python 3.x
-- jinja2 (`pip install jinja2`)
+- Python 3.12+
+- flask, jinja2, gunicorn (see `requirements.txt`)
 - limacharlie SDK (for playbook deployment only)
 
 # Using LimaCharlie
