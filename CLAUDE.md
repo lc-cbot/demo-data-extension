@@ -81,6 +81,31 @@ curl -X POST "https://demo-data-extension-XXXXX-uc.a.run.app/load" \
   }'
 ```
 
+### Deploy LimaCharlie Extension to Cloud Run
+```bash
+# Generate a random secret (32+ characters)
+export EXT_SECRET=$(openssl rand -hex 32)
+echo "Save this secret: $EXT_SECRET"
+
+# Deploy the extension
+gcloud run deploy ext-demo-data \
+  --source . \
+  --dockerfile Dockerfile.extension \
+  --project lc-demo-infra \
+  --region us-central1 \
+  --allow-unauthenticated \
+  --memory 256Mi \
+  --timeout 300 \
+  --set-env-vars "EXT_SECRET=$EXT_SECRET"
+```
+
+### Register Extension in LimaCharlie
+After deploying, register the extension at https://app.limacharlie.io/extensions with:
+- **Name**: `ext-demo-data`
+- **URL**: The Cloud Run service URL
+- **Secret**: The EXT_SECRET value generated above
+- **Permissions**: `dr.set`, `dr.del`, `sensor.set`, `sensor.del`
+
 ## Architecture
 
 ```
@@ -102,6 +127,7 @@ Detections/Alerts
 |--------|----------|
 | CLI (`log_template_processor.py`) | Local testing, one-off runs |
 | Cloud Run (`main.py`) | Scheduled jobs, API-triggered, production |
+| LimaCharlie Extension (`extension.py`) | **Recommended** - Auto-setup on subscribe, marketplace distribution |
 | LimaCharlie Playbook | Triggered by D&R rules, org-specific |
 
 ### Critical Design Constraint
@@ -151,9 +177,11 @@ Not `event/events/0/COMMAND_LINE` (nested arrays don't work).
 
 | File | Purpose |
 |------|---------|
-| `main.py` | Flask app for Cloud Run deployment |
+| `extension.py` | **LimaCharlie Extension** - auto-setup webhook + D&R rules on subscribe |
+| `Dockerfile.extension` | Container for extension deployment |
+| `main.py` | Standalone Flask app for Cloud Run (no extension features) |
+| `Dockerfile` | Container for standalone Cloud Run deployment |
 | `log_template_processor.py` | Core logic + standalone CLI tool |
-| `Dockerfile` | Container definition for Cloud Run |
 | `requirements.txt` | Python dependencies |
 | `demo_data_loader_playbook.py` | LimaCharlie playbook version |
 | `demo_dr_rules.yaml` | 10 D&R rules matching demo events |
@@ -163,8 +191,7 @@ Not `event/events/0/COMMAND_LINE` (nested arrays don't work).
 ## Dependencies
 
 - Python 3.12+
-- flask, jinja2, gunicorn (see `requirements.txt`)
-- limacharlie SDK (for playbook deployment only)
+- flask, jinja2, gunicorn, lcextension, limacharlie (see `requirements.txt`)
 
 # Using LimaCharlie
 
