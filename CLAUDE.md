@@ -1,0 +1,272 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Overview
+
+Demo data extension for LimaCharlie that generates sample security events with recent timestamps and sends them to webhooks for D&R rule testing. Used to populate demo organizations with realistic detection-triggering events.
+
+## Commands
+
+### Run the template processor locally
+```bash
+# Process template and output to file
+python3 log_template_processor.py lc_events_simple_template.json output.json
+
+# Process template and send to webhook
+python3 log_template_processor.py lc_events_simple_template.json "https://[hook].hook.limacharlie.io/[oid]/[name]/[secret]"
+
+# Fetch from URL and send to webhook
+python3 log_template_processor.py "https://example.com/template.json" "https://webhook.url"
+
+# Output to stdout
+python3 log_template_processor.py lc_events_simple_template.json
+```
+
+### Deploy playbook to LimaCharlie
+```python
+import limacharlie
+
+lc = limacharlie.Manager(oid="your-org-id")
+hive = limacharlie.Hive(lc, "playbook")
+
+with open("demo_data_loader_playbook.py", "r") as f:
+    code = f.read()
+
+hive.set("demo-data-extension", {"python": code})
+```
+
+### Run playbook via SDK
+```python
+ext = limacharlie.Extension(lc)
+ext.request("ext-playbook", "run_playbook", {
+    "name": "demo-data-extension",
+    "data": {
+        "template_url": "https://...",
+        "webhook_url": "https://..."
+    }
+})
+```
+
+## Architecture
+
+```
+JSON Template (with {{ date }} placeholders)
+    ↓
+Template Processor (log_template_processor.py or playbook)
+    ↓ Fills dates (spread across 7 days), renders Jinja2
+    ↓
+Webhook (flat JSON POST per event)
+    ↓
+D&R Rules (match on event/FIELD_NAME paths)
+    ↓
+Detections/Alerts
+```
+
+### Critical Design Constraint
+
+Webhook events **must be sent as flat JSON objects**, not wrapped in `{"events": [...]}`. D&R rules access fields at `event/FIELD_NAME` paths, not `event/events/0/FIELD_NAME`.
+
+## Template Format
+
+Events are JSON arrays with Jinja2 date placeholders:
+
+```json
+[
+  {
+    "_event_type": "NEW_PROCESS",
+    "_ts": "{{ date }} 10:15:32",
+    "COMMAND_LINE": "powershell.exe -enc SGVsbG8=",
+    "FILE_PATH": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+  }
+]
+```
+
+### Supported Variables
+
+| Variable | Format | Example |
+|----------|--------|---------|
+| `{{ date }}` | YYYY-MM-DD | 2026-01-06 |
+| `{{ date_us }}` | MM/DD/YYYY | 01/06/2026 |
+| `{{ date_eu }}` | DD/MM/YYYY | 06/01/2026 |
+| `{{ date_short }}` | YYYYMMDD | 20260106 |
+| `{{ syslog_date }}` | Mon DD | Jan  6 |
+| `{{ day_offset }}` | Integer | 0 (today), 1, 2... |
+
+## D&R Rule Paths
+
+For webhook-ingested events, use `event/<field>` paths:
+
+```yaml
+detect:
+  op: contains
+  path: event/COMMAND_LINE    # Correct
+  value: "-enc"
+```
+
+Not `event/events/0/COMMAND_LINE` (nested arrays don't work).
+
+## Files
+
+| File | Purpose |
+|------|---------|
+| `log_template_processor.py` | Standalone CLI tool - processes templates, sends to webhooks |
+| `demo_data_loader_playbook.py` | LimaCharlie playbook version (deployed to ext-playbook) |
+| `demo_dr_rules.yaml` | 10 D&R rules matching demo events |
+| `lc_events_simple_template.json` | 50-event simplified template |
+| `lc_events_template.json` | 50-event full LC event format |
+
+## Dependencies
+
+- Python 3.x
+- jinja2 (`pip install jinja2`)
+- limacharlie SDK (for playbook deployment only)
+
+# Using LimaCharlie
+
+## Required Skill
+
+**ALWAYS load the `lc-essentials:limacharlie-call` skill** before any LimaCharlie API operation. Never call LimaCharlie MCP tools directly.
+
+## Critical Rules
+
+### 1. Never Call MCP Tools Directly
+
+- **WRONG**: `mcp__plugin_lc-essentials_limacharlie__lc_call_tool(...)`
+- **CORRECT**: Use Task tool with `subagent_type="lc-essentials:limacharlie-api-executor"`
+
+### 2. Never Write LCQL Queries Manually
+
+LCQL uses unique pipe-based syntax validated against org-specific schemas.
+
+- **ALWAYS**: `generate_lcql_query()` first, then `run_lcql_query()` with the generated query
+- Manual queries WILL fail or produce incorrect results
+
+### 3. Never Generate D&R Rules Manually
+
+Use AI generation tools:
+1. `generate_dr_rule_detection()` - Generate detection YAML
+2. `generate_dr_rule_respond()` - Generate response YAML
+3. `validate_dr_rule_components()` - Validate before deploy
+
+### 4. Never Calculate Timestamps Manually
+
+LLMs consistently produce incorrect timestamp values.
+
+**ALWAYS use bash:**
+```bash
+date +%s                           # Current time (seconds)
+date -d '1 hour ago' +%s           # 1 hour ago
+date -d '7 days ago' +%s           # 7 days ago
+date -d '2025-01-15 00:00:00 UTC' +%s  # Specific date
+```
+
+### 5. OID is UUID, NOT Organization Name
+
+- **WRONG**: `oid: "my-org-name"`
+- **CORRECT**: `oid: "c1ffedc0-ffee-4a1e-b1a5-abc123def456"`
+- Use `get_org_oid_by_name` to convert a single org name to OID (cached, efficient)
+- Use `list_user_orgs` to list all accessible orgs with their OIDs
+
+### 6. Timestamp Milliseconds vs Seconds
+
+- Detection/event data: **milliseconds** (13 digits)
+- API parameters (`get_historic_events`, `get_historic_detections`): **seconds** (10 digits)
+- **ALWAYS** divide by 1000 when using detection timestamps for API queries
+
+### 7. Never Fabricate Data
+
+- Only report what APIs return
+- Never estimate, infer, or extrapolate data
+- Show "N/A" or "Data unavailable" for missing fields
+- Never calculate costs (no pricing data in API)
+
+### 8. Spawn Agents in Parallel
+
+When processing multiple organizations or items:
+- Use a SINGLE message with multiple Task calls
+- Do NOT spawn agents sequentially
+- Each agent handles ONE item, parent aggregates results
+
+## Standard Operating Procedures (SOPs)
+
+Organizations can define SOPs (Standard Operating Procedures) in LimaCharlie that guide how tasks are performed. SOPs can be large documents, so they are loaded lazily (similar to Claude Code Skills).
+
+### On Conversation Start (Load Index Only)
+
+At the beginning of every conversation involving LimaCharlie operations:
+
+1. **List all SOPs** using `list_sops` for each organization in scope
+2. **Store ONLY the name and description** of each SOP (ignore the `text` field - it may be truncated or large)
+3. Use this index to identify when an SOP might apply to current work
+
+**Important:** Do NOT read or use the full SOP content at this stage. The `list_sops` response may include a `text` field, but ignore it - always call `get_sop` when you need the actual procedure.
+
+### When Performing Tasks (Load Full Content)
+
+Before executing any significant operation:
+
+1. **Check SOP relevance**: Compare the current task against stored SOP descriptions
+2. **If a match is found**:
+   - Announce: "Following SOP: [sop-name] - [description]"
+   - **MUST call `get_sop`** to retrieve the full SOP content (do not skip this step)
+   - Follow the procedure defined in the SOP
+3. **If multiple SOPs match**: Announce all matching SOPs, call `get_sop` for each, and follow all applicable procedures
+
+### Example Workflow
+
+1. User asks to investigate a malware alert
+2. LLM checks stored SOP index: "malware-response" matches (description: "Standard procedure for malware incidents")
+3. LLM announces: "Following SOP: malware-response - Standard procedure for malware incidents"
+4. LLM calls `get_sop(name="malware-response")` to load the full procedure
+5. LLM follows the documented steps from the loaded SOP content
+
+## Sensor Selector Reference
+
+Sensor selectors use [bexpr](https://github.com/hashicorp/go-bexpr) syntax to filter sensors. Use `*` to match all sensors.
+
+### Available Fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `sid` | string | Sensor ID (UUID) |
+| `oid` | string | Organization ID (UUID) |
+| `iid` | string | Installation Key ID (UUID) |
+| `plat` | string | Platform name (see values below) |
+| `ext_plat` | string | Extended platform (for multi-platform adapters like Carbon Black) |
+| `arch` | string | Architecture (see values below) |
+| `hostname` | string | Sensor hostname |
+| `ext_ip` | string | External IP address |
+| `int_ip` | string | Internal IP address |
+| `mac_addr` | string | MAC address |
+| `did` | string | Device ID |
+| `enroll` | int | Enrollment timestamp |
+| `alive` | int | Last seen timestamp |
+| `is_del` | bool | Sensor is deleted |
+| `isolated` | bool | Sensor is network isolated |
+| `should_isolate` | bool | Sensor should be isolated |
+| `kernel` | bool | Kernel mode enabled |
+| `sealed` | bool | Sensor is sealed |
+| `should_seal` | bool | Sensor should be sealed |
+| `tags` | string[] | Sensor tags (use `in` operator) |
+
+### Platform Values (`plat`, `ext_plat`)
+
+**EDR Platforms:** `windows`, `linux`, `macos`, `ios`, `android`, `chrome`, `vpn`
+
+**Adapter/USP Platforms:** `text`, `json`, `gcp`, `aws`, `carbon_black`, `1password`, `office365`, `sophos`, `crowdstrike`, `msdefender`, `sentinel_one`, `okta`, `duo`, `github`, `slack`, `azure_ad`, `azure_monitor`, `entraid`, `zeek`, `cef`, `wel`, `xml`, `guard_duty`, `k8s_pods`, `wiz`, `proofpoint`, `box`, `cylance`, `fortigate`, `netscaler`, `paloalto_fw`, `iis`, `trend_micro`, `trend_worryfree`, `bitwarden`, `mimecast`, `hubspot`, `zendesk`, `pandadoc`, `falconcloud`, `sublime`, `itglue`, `canary_token`, `lc_event`, `email`, `mac_unified_logging`, `azure_event_hub_namespace`, `azure_key_vault`, `azure_kubernetes_service`, `azure_network_security_group`, `azure_sql_audit`
+
+### Architecture Values (`arch`)
+
+`x86`, `x64`, `arm`, `arm64`, `alpine64`, `chromium`, `wireguard`, `arml`, `usp_adapter`
+
+### Example Selectors
+
+```
+plat == windows                           # All Windows sensors
+plat == windows and arch == x64           # 64-bit Windows only
+plat == linux and hostname contains "web" # Linux with "web" in hostname
+"prod" in tags                            # Sensors tagged "prod"
+plat == windows and not isolated          # Non-isolated Windows
+ext_plat == windows                       # Carbon Black/Crowdstrike reporting Windows endpoints
+```

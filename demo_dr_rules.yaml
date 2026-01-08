@@ -1,0 +1,247 @@
+# Demo D&R Rules for Webhook-Ingested Events
+# These rules fire against FLAT JSON events sent via webhook
+# Event data is at: event/<field> (not nested in events array)
+
+---
+# Rule 1: Encoded PowerShell Execution
+name: demo-encoded-powershell
+detect:
+  op: and
+  rules:
+    - op: is
+      path: event/_event_type
+      value: NEW_PROCESS
+    - op: contains
+      path: event/COMMAND_LINE
+      value: -enc
+    - op: ends with
+      path: event/FILE_PATH
+      value: powershell.exe
+      case sensitive: false
+respond:
+  - action: report
+    name: Encoded PowerShell Execution Detected
+    metadata:
+      author: demo
+      description: PowerShell was executed with encoded commands, common in malware and living-off-the-land attacks
+      mitre:
+        - T1059.001
+
+---
+# Rule 2: Reconnaissance - whoami
+name: demo-recon-whoami
+detect:
+  op: and
+  rules:
+    - op: is
+      path: event/_event_type
+      value: NEW_PROCESS
+    - op: contains
+      path: event/COMMAND_LINE
+      value: whoami
+respond:
+  - action: report
+    name: Reconnaissance - whoami Command
+    metadata:
+      author: demo
+      description: whoami command executed, often used for reconnaissance
+      mitre:
+        - T1033
+
+---
+# Rule 3: Reconnaissance - net user enumeration
+name: demo-recon-net-user
+detect:
+  op: and
+  rules:
+    - op: is
+      path: event/_event_type
+      value: NEW_PROCESS
+    - op: matches
+      path: event/COMMAND_LINE
+      re: net\s+(user|group|localgroup).*\/domain
+      case sensitive: false
+respond:
+  - action: report
+    name: Domain User Enumeration
+    metadata:
+      author: demo
+      description: Domain user/group enumeration detected
+      mitre:
+        - T1087.002
+
+---
+# Rule 4: Certutil Download (LOLBin)
+name: demo-certutil-download
+detect:
+  op: and
+  rules:
+    - op: is
+      path: event/_event_type
+      value: NEW_PROCESS
+    - op: ends with
+      path: event/FILE_PATH
+      value: certutil.exe
+      case sensitive: false
+    - op: contains
+      path: event/COMMAND_LINE
+      value: urlcache
+respond:
+  - action: report
+    name: Certutil Used for Download
+    metadata:
+      author: demo
+      description: Certutil.exe was used to download a file, a common LOLBin technique
+      mitre:
+        - T1105
+
+---
+# Rule 5: Mimikatz Execution
+name: demo-mimikatz
+detect:
+  op: and
+  rules:
+    - op: is
+      path: event/_event_type
+      value: NEW_PROCESS
+    - op: or
+      rules:
+        - op: contains
+          path: event/COMMAND_LINE
+          value: mimikatz
+          case sensitive: false
+        - op: contains
+          path: event/COMMAND_LINE
+          value: sekurlsa
+        - op: contains
+          path: event/FILE_PATH
+          value: mimikatz
+          case sensitive: false
+respond:
+  - action: report
+    name: Mimikatz Credential Dumping Tool
+    metadata:
+      author: demo
+      description: Mimikatz or related credential dumping activity detected
+      mitre:
+        - T1003.001
+      severity: critical
+
+---
+# Rule 6: Registry Persistence (Run Key)
+name: demo-registry-persistence
+detect:
+  op: and
+  rules:
+    - op: is
+      path: event/_event_type
+      value: NEW_PROCESS
+    - op: ends with
+      path: event/FILE_PATH
+      value: reg.exe
+      case sensitive: false
+    - op: contains
+      path: event/COMMAND_LINE
+      value: CurrentVersion\\Run
+      case sensitive: false
+respond:
+  - action: report
+    name: Registry Run Key Persistence
+    metadata:
+      author: demo
+      description: Modification of registry Run key for persistence
+      mitre:
+        - T1547.001
+
+---
+# Rule 7: Scheduled Task Persistence
+name: demo-schtasks-persistence
+detect:
+  op: and
+  rules:
+    - op: is
+      path: event/_event_type
+      value: NEW_PROCESS
+    - op: ends with
+      path: event/FILE_PATH
+      value: schtasks.exe
+      case sensitive: false
+    - op: contains
+      path: event/COMMAND_LINE
+      value: /create
+respond:
+  - action: report
+    name: Scheduled Task Created for Persistence
+    metadata:
+      author: demo
+      description: Scheduled task created, potential persistence mechanism
+      mitre:
+        - T1053.005
+
+---
+# Rule 8: Windows Failed Login (4625)
+name: demo-failed-login
+detect:
+  op: and
+  rules:
+    - op: is
+      path: event/_event_type
+      value: WEL
+    - op: is
+      path: event/EVENT/System/EventID
+      value: "4625"
+respond:
+  - action: report
+    name: Windows Failed Login Attempt
+    metadata:
+      author: demo
+      description: Failed Windows authentication attempt detected
+      mitre:
+        - T1110
+
+---
+# Rule 9: Suspicious DNS Request
+name: demo-suspicious-dns
+detect:
+  op: and
+  rules:
+    - op: is
+      path: event/_event_type
+      value: DNS_REQUEST
+    - op: contains
+      path: event/DOMAIN_NAME
+      value: malicious
+respond:
+  - action: report
+    name: Suspicious DNS Request
+    metadata:
+      author: demo
+      description: DNS request to potentially malicious domain
+      mitre:
+        - T1071.004
+
+---
+# Rule 10: File Created in Public Folder
+name: demo-file-public-folder
+detect:
+  op: and
+  rules:
+    - op: is
+      path: event/_event_type
+      value: FILE_CREATE
+    - op: contains
+      path: event/FILE_PATH
+      value: \\Users\\Public\\
+      case sensitive: false
+    - op: ends with
+      path: event/FILE_PATH
+      value: .exe
+      case sensitive: false
+respond:
+  - action: report
+    name: Executable Created in Public Folder
+    metadata:
+      author: demo
+      description: Executable file created in Users\Public folder, common malware drop location
+      mitre:
+        - T1204.002

@@ -1,0 +1,2015 @@
+[
+  {
+    "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k termsvcs -s TermService",
+    "CREATION_TIME": 1765337246490,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+    "HASH": "d7f10571f58adbe122f615b869eb42b05286770148067cbf88054c38f1bca4c4",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "102.88.137.82",
+          "PORT": 65466
+        },
+        "TIMESTAMP": 1767718149743
+      }
+    ],
+    "PARENT_PROCESS_ID": 628,
+    "PROCESS_ID": 336,
+    "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE",
+    "_event_type": "NETWORK_CONNECTIONS",
+    "_ts": "{{ date }} 16:49:23"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "109.205.211.41",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "-",
+        "TargetUserName": "ADMINISTRATOR",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+        "Correlation": {
+          "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "24344640",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "3300"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:49:23.8545351Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:49:24"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "194.180.49.39",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc0000064",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "-",
+        "TargetUserName": "ADMIN",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+        "Correlation": {
+          "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "24344641",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "3300"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:49:34.7816997Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:49:35"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "194.180.49.40",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc0000064",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "-",
+        "TargetUserName": "ADMIN",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+        "Correlation": {
+          "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "24344642",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "3300"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:49:42.5563664Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:49:43"
+  },
+  {
+    "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k termsvcs -s TermService",
+    "CREATION_TIME": 1765337246490,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+    "HASH": "d7f10571f58adbe122f615b869eb42b05286770148067cbf88054c38f1bca4c4",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "109.205.211.41",
+          "PORT": 51113
+        },
+        "TIMESTAMP": 1767718163206
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "194.180.49.39",
+          "PORT": 31813
+        },
+        "TIMESTAMP": 1767718174137
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "194.180.49.40",
+          "PORT": 52976
+        },
+        "TIMESTAMP": 1767718181895
+      }
+    ],
+    "PARENT_PROCESS_ID": 628,
+    "PROCESS_ID": 336,
+    "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE",
+    "_event_type": "NETWORK_CONNECTIONS",
+    "_ts": "{{ date }} 16:49:54"
+  },
+  {
+    "COMMAND_LINE": "C:\\Windows\\System32\\rundll32.exe",
+    "CREATION_TIME": 1765337249680,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\System32\\rundll32.exe",
+    "HASH": "02f6a04b3373f195152fb1b4aeafe25bf8ef4411dc020c2238c541bcc3dc309b",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "35.232.8.38",
+          "PORT": 80
+        },
+        "IS_OUTGOING": 1,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 61832
+        },
+        "TIMESTAMP": 1767718179048
+      }
+    ],
+    "PARENT_PROCESS_ID": 2456,
+    "PROCESS_ID": 3316,
+    "USER_NAME": "NT AUTHORITY\\SYSTEM",
+    "_event_type": "NETWORK_CONNECTIONS",
+    "_ts": "{{ date }} 16:49:54"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "103.230.85.243",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "-",
+        "TargetUserName": "ADMINISTRATOR",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+        "Correlation": {
+          "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "24344643",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "3300"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:50:04.2019393Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:50:05"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "102.88.137.82",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc0000064",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "-",
+        "TargetUserName": "PC",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+        "Correlation": {
+          "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "24344644",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "3300"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:50:04.3588643Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:50:05"
+  },
+  {
+    "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k termsvcs -s TermService",
+    "CREATION_TIME": 1765337246490,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+    "HASH": "d7f10571f58adbe122f615b869eb42b05286770148067cbf88054c38f1bca4c4",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "103.230.85.243",
+          "PORT": 64012
+        },
+        "TIMESTAMP": 1767718202099
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "102.88.137.82",
+          "PORT": 63507
+        },
+        "TIMESTAMP": 1767718203427
+      }
+    ],
+    "PARENT_PROCESS_ID": 628,
+    "PROCESS_ID": 336,
+    "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE",
+    "_event_type": "NETWORK_CONNECTIONS",
+    "_ts": "{{ date }} 16:50:25"
+  },
+  {
+    "COMMAND_LINE": "C:\\Windows\\system32\\svchost.exe -k LocalService -s w32time",
+    "CREATION_TIME": 1765337246563,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\system32\\svchost.exe",
+    "HASH": "d7f10571f58adbe122f615b869eb42b05286770148067cbf88054c38f1bca4c4",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "169.254.169.254",
+          "PORT": 123
+        },
+        "IS_OUTGOING": 1,
+        "PROTOCOL": "udp4",
+        "SOURCE": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 123
+        },
+        "TIMESTAMP": 1767718210120
+      }
+    ],
+    "PARENT_PROCESS_ID": 628,
+    "PROCESS_ID": 600,
+    "USER_NAME": "NT AUTHORITY\\LOCAL SERVICE",
+    "_event_type": "NETWORK_CONNECTIONS",
+    "_ts": "{{ date }} 16:50:25"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "3.70.126.251",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "",
+        "TargetUserName": "ADMINISTRATOR",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "9808957",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:49:23.9414068Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:49:24"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "194.180.49.40",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "",
+        "TargetUserName": "ADMINISTRATOR",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "9808958",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:49:25.3341153Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:49:26"
+  },
+  {
+    "BASE_ADDRESS": 140701616635904,
+    "COMMAND_LINE": "C:\\Windows\\servicing\\TrustedInstaller.exe",
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\servicing\\TrustedInstaller.exe",
+    "HASH": "7f0e3e2682a24a6b27484226cc0c7b30f837ea08b01f82c7b7ac094bf0a88ce5",
+    "MEMORY_USAGE": 7479296,
+    "PARENT": {
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "\\Device\\HarddiskVolume3\\Windows\\System32\\services.exe",
+      "HASH": "dfbea9e8c316d9bc118b454b0c722cd674c30d0a256340200e2c3a7480cba674",
+      "MEMORY_USAGE": 8495104,
+      "PARENT_ATOM": "debc7489cdb739c3ba5392a76930948d",
+      "PARENT_PROCESS_ID": 496,
+      "PROCESS_ID": 624,
+      "THIS_ATOM": "7ee3b7d0306638b8931a0fb46930948d",
+      "THREADS": 8,
+      "TIMESTAMP": 1764791437663,
+      "USER_NAME": "NT AUTHORITY\\SYSTEM"
+    },
+    "PARENT_PROCESS_ID": 624,
+    "PROCESS_ID": 17972,
+    "THREADS": 8,
+    "USER_NAME": "NT AUTHORITY\\SYSTEM",
+    "_event_type": "NEW_PROCESS",
+    "_ts": "{{ date }} 16:49:30"
+  },
+  {
+    "ENVIRONMENT_VARIABLES": [
+      "ALLUSERSPROFILE=C:\\ProgramData",
+      "APPDATA=C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming",
+      "CommonProgramFiles=C:\\Program Files\\Common Files",
+      "CommonProgramFiles(x86)=C:\\Program Files (x86)\\Common Files",
+      "CommonProgramW6432=C:\\Program Files\\Common Files",
+      "COMPUTERNAME=DESKTOP-C2A1841",
+      "ComSpec=C:\\Windows\\system32\\cmd.exe",
+      "DriverData=C:\\Windows\\System32\\Drivers\\DriverData",
+      "GooGetRoot=C:\\ProgramData\\GooGet",
+      "LOCALAPPDATA=C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local",
+      "NUMBER_OF_PROCESSORS=2",
+      "OS=Windows_NT",
+      "Path=C:\\Program Files\\Python310\\Scripts\\;C:\\Program Files\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\ProgramData\\GooGet;C:\\Program Files\\Google\\Compute Engine\\metadata_scripts;C:\\Program Files\\Google\\Compute Engine\\sysprep;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps",
+      "PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW",
+      "PROCESSOR_ARCHITECTURE=AMD64",
+      "PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 79 Stepping 0, GenuineIntel",
+      "PROCESSOR_LEVEL=6",
+      "PROCESSOR_REVISION=4f00",
+      "ProgramData=C:\\ProgramData",
+      "ProgramFiles=C:\\Program Files",
+      "ProgramFiles(x86)=C:\\Program Files (x86)",
+      "ProgramW6432=C:\\Program Files",
+      "PSModulePath=%ProgramFiles%\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+      "PUBLIC=C:\\Users\\Public",
+      "SystemDrive=C:",
+      "SystemRoot=C:\\Windows",
+      "TEMP=C:\\Windows\\TEMP",
+      "TMP=C:\\Windows\\TEMP",
+      "USERDOMAIN=WORKGROUP",
+      "USERNAME=DESKTOP-C2A1841$",
+      "USERPROFILE=C:\\Windows\\system32\\config\\systemprofile",
+      "windir=C:\\Windows"
+    ],
+    "PROCESS_ID": 17972,
+    "_event_type": "PROCESS_ENVIRONMENT",
+    "_ts": "{{ date }} 16:49:30"
+  },
+  {
+    "BASE_ADDRESS": 140700965601280,
+    "COMMAND_LINE": "C:\\Windows\\winsxs\\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.19041.1940_none_7dd80d767cb5c7b0\\TiWorker.exe -Embedding",
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\winsxs\\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.19041.1940_none_7dd80d767cb5c7b0\\TiWorker.exe",
+    "HASH": "b87f907f63f3b6059759dbfbcef2a10a5745fa1bc35bdf28c300553922926864",
+    "MEMORY_USAGE": 16101376,
+    "PARENT": {
+      "BASE_ADDRESS": 140700938862592,
+      "COMMAND_LINE": "C:\\Windows\\system32\\svchost.exe -k DcomLaunch -p",
+      "CREATION_TIME": 1734629975978,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\system32\\svchost.exe",
+      "HASH": "add683a6910abbbf0e28b557fad0ba998166394932ae2aca069d9aa19ea8fe88",
+      "MEMORY_USAGE": 230592512,
+      "PARENT_ATOM": "7ee3b7d0306638b8931a0fb46930948d",
+      "PARENT_PROCESS_ID": 624,
+      "PROCESS_ID": 752,
+      "THIS_ATOM": "e0b0d193a2bb84b39c2178506930948d",
+      "THREADS": 11,
+      "TIMESTAMP": 1764791437772,
+      "USER_NAME": "NT AUTHORITY\\SYSTEM"
+    },
+    "PARENT_PROCESS_ID": 752,
+    "PROCESS_ID": 13864,
+    "THREADS": 6,
+    "USER_NAME": "NT AUTHORITY\\SYSTEM",
+    "_event_type": "NEW_PROCESS",
+    "_ts": "{{ date }} 16:49:30"
+  },
+  {
+    "ENVIRONMENT_VARIABLES": [
+      "ALLUSERSPROFILE=C:\\ProgramData",
+      "APPDATA=C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming",
+      "CommonProgramFiles=C:\\Program Files\\Common Files",
+      "CommonProgramFiles(x86)=C:\\Program Files (x86)\\Common Files",
+      "CommonProgramW6432=C:\\Program Files\\Common Files",
+      "COMPUTERNAME=DESKTOP-C2A1841",
+      "ComSpec=C:\\Windows\\system32\\cmd.exe",
+      "DriverData=C:\\Windows\\System32\\Drivers\\DriverData",
+      "GooGetRoot=C:\\ProgramData\\GooGet",
+      "LOCALAPPDATA=C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local",
+      "NUMBER_OF_PROCESSORS=2",
+      "OS=Windows_NT",
+      "Path=C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\ProgramData\\GooGet;C:\\Program Files\\Google\\Compute Engine\\metadata_scripts;C:\\Program Files\\Google\\Compute Engine\\sysprep;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps",
+      "PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+      "PROCESSOR_ARCHITECTURE=AMD64",
+      "PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 79 Stepping 0, GenuineIntel",
+      "PROCESSOR_LEVEL=6",
+      "PROCESSOR_REVISION=4f00",
+      "ProgramData=C:\\ProgramData",
+      "ProgramFiles=C:\\Program Files",
+      "ProgramFiles(x86)=C:\\Program Files (x86)",
+      "ProgramW6432=C:\\Program Files",
+      "PSModulePath=%ProgramFiles%\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+      "PUBLIC=C:\\Users\\Public",
+      "SystemDrive=C:",
+      "SystemRoot=C:\\Windows",
+      "TEMP=C:\\Windows\\TEMP",
+      "TMP=C:\\Windows\\TEMP",
+      "USERDOMAIN=WORKGROUP",
+      "USERNAME=DESKTOP-C2A1841$",
+      "USERPROFILE=C:\\Windows\\system32\\config\\systemprofile",
+      "windir=C:\\Windows"
+    ],
+    "PROCESS_ID": 13864,
+    "_event_type": "PROCESS_ENVIRONMENT",
+    "_ts": "{{ date }} 16:49:30"
+  },
+  {
+    "FILE_PATH": "C:\\Windows\\System32\\sru\\SRU.log",
+    "PROCESS_ID": 2984,
+    "_event_type": "FILE_MODIFIED",
+    "_ts": "{{ date }} 16:49:18"
+  },
+  {
+    "FILE_PATH": "C:\\Windows\\System32\\sru\\SRUDB.jfm",
+    "PROCESS_ID": 2984,
+    "_event_type": "FILE_MODIFIED",
+    "_ts": "{{ date }} 16:49:18"
+  },
+  {
+    "FILE_PATH": "C:\\Windows\\System32\\sru\\SRUDB.dat",
+    "PROCESS_ID": 2984,
+    "_event_type": "FILE_MODIFIED",
+    "_ts": "{{ date }} 16:49:18"
+  },
+  {
+    "FILE_PATH": "C:\\Windows\\System32\\sru\\SRUDB.dat",
+    "PROCESS_ID": 2984,
+    "_event_type": "FILE_MODIFIED",
+    "_ts": "{{ date }} 16:49:18"
+  },
+  {
+    "FILE_PATH": "C:\\Windows\\Logs\\CBS\\CBS.log",
+    "PROCESS_ID": 17972,
+    "_event_type": "FILE_MODIFIED",
+    "_ts": "{{ date }} 16:49:30"
+  },
+  {
+    "FILE_PATH": "C:\\Windows\\Logs\\CBS\\CBS.log",
+    "PROCESS_ID": 13864,
+    "_event_type": "FILE_MODIFIED",
+    "_ts": "{{ date }} 16:49:30"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "Negotiate",
+        "ElevatedToken": "%%1842",
+        "ImpersonationLevel": "%%1833",
+        "IpAddress": "-",
+        "IpPort": "-",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonGuid": "{00000000-0000-0000-0000-000000000000}",
+        "LogonProcessName": "Advapi",
+        "LogonType": "5",
+        "ProcessId": "0x270",
+        "ProcessName": "C:\\Windows\\System32\\services.exe",
+        "RestrictedAdminMode": "-",
+        "SubjectDomainName": "WORKGROUP",
+        "SubjectLogonId": "0x3e7",
+        "SubjectUserName": "DESKTOP-C2A1841$",
+        "SubjectUserSid": "S-1-5-18",
+        "TargetDomainName": "NT AUTHORITY",
+        "TargetLinkedLogonId": "0x0",
+        "TargetLogonId": "0x3e7",
+        "TargetOutboundDomainName": "-",
+        "TargetOutboundUserName": "-",
+        "TargetUserName": "SYSTEM",
+        "TargetUserSid": "S-1-5-18",
+        "TransmittedServices": "-",
+        "VirtualAccount": "%%1843",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4624",
+        "EventRecordID": "9808959",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8020000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:49:30.5178847Z"
+        },
+        "Version": "2",
+        "_event_id": "4624"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:49:31"
+  },
+  {
+    "DLL": "%SystemRoot%\\system32\\appxdeploymentserver.dll",
+    "EXECUTABLE": "%systemroot%\\system32\\svchost.exe -k wsappx -p",
+    "FILE_IS_SIGNED": 1,
+    "HASH": "88245d62c16b930ee1e2cd1284c4c7ed69ba228f89ebefb2863c4278d0fcf874",
+    "PROCESS_ID": 0,
+    "SVC_DISPLAY_NAME": "AppX Deployment Service (AppXSVC)",
+    "SVC_NAME": "AppXSvc",
+    "SVC_STATE": 1,
+    "SVC_TYPE": 48,
+    "_event_type": "SERVICE_CHANGE",
+    "_ts": "{{ date }} 16:49:36"
+  },
+  {
+    "DLL": "%SystemRoot%\\System32\\gpsvc.dll",
+    "EXECUTABLE": "%systemroot%\\system32\\svchost.exe -k netsvcs -p",
+    "FILE_IS_SIGNED": 1,
+    "HASH": "49545521a549b9f045cf2dee0eda41deeab3f37e20735d7f905276b5f8980481",
+    "PROCESS_ID": 10840,
+    "SVC_DISPLAY_NAME": "Group Policy Client",
+    "SVC_NAME": "gpsvc",
+    "SVC_STATE": 4,
+    "SVC_TYPE": 48,
+    "_event_type": "SERVICE_CHANGE",
+    "_ts": "{{ date }} 16:49:36"
+  },
+  {
+    "EXECUTABLE": "%SystemRoot%\\servicing\\TrustedInstaller.exe",
+    "FILE_IS_SIGNED": 1,
+    "HASH": "7f0e3e2682a24a6b27484226cc0c7b30f837ea08b01f82c7b7ac094bf0a88ce5",
+    "PROCESS_ID": 17972,
+    "SVC_DISPLAY_NAME": "Windows Modules Installer",
+    "SVC_NAME": "TrustedInstaller",
+    "SVC_STATE": 4,
+    "SVC_TYPE": 16,
+    "_event_type": "SERVICE_CHANGE",
+    "_ts": "{{ date }} 16:49:36"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "201.150.150.54",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc0000064",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "",
+        "TargetUserName": "SERVER",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "9808961",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:49:39.1102092Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:49:40"
+  },
+  {
+    "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k NetworkService -s TermService",
+    "CREATION_TIME": 1734629976659,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+    "HASH": "add683a6910abbbf0e28b557fad0ba998166394932ae2aca069d9aa19ea8fe88",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "194.180.49.39",
+          "PORT": 45796
+        },
+        "TIMESTAMP": 1767718151661
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "3.70.126.251",
+          "PORT": 52933
+        },
+        "TIMESTAMP": 1767718163212
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "194.180.49.40",
+          "PORT": 58854
+        },
+        "TIMESTAMP": 1767718164665
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "201.150.150.54",
+          "PORT": 52382
+        },
+        "TIMESTAMP": 1767718178147
+      }
+    ],
+    "PARENT_PROCESS_ID": 624,
+    "PROCESS_ID": 724,
+    "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE",
+    "_event_type": "NETWORK_CONNECTIONS",
+    "_ts": "{{ date }} 16:49:42"
+  },
+  {
+    "FILE_PATH": "C:\\Windows\\Prefetch\\TRUSTEDINSTALLER.EXE-766EFF52.pf",
+    "PROCESS_ID": 1748,
+    "_event_type": "FILE_MODIFIED",
+    "_ts": "{{ date }} 16:49:40"
+  },
+  {
+    "FILE_PATH": "C:\\Windows\\Prefetch\\TIWORKER.EXE-252288BE.pf",
+    "PROCESS_ID": 1748,
+    "_event_type": "FILE_MODIFIED",
+    "_ts": "{{ date }} 16:49:40"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "38.54.50.121",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "WIN-QPBU6973Q4A",
+        "TargetUserName": "Administrator",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "WIN-QPBU6973Q4A"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "9808962",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:49:50.5402552Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:49:51"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "38.54.50.121",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "WIN-QPBU6973Q4A",
+        "TargetUserName": "Administrator",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "WIN-QPBU6973Q4A"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "9808963",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:49:51.6649500Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:49:52"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "37.187.28.46",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc0000064",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "",
+        "TargetUserName": "SERVICES",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "9808964",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:49:54.3217685Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:49:55"
+  },
+  {
+    "DNS_TYPE": 28,
+    "DOMAIN_NAME": "wpad",
+    "ERROR": 9003,
+    "PROCESS_ID": 11944,
+    "THREAD_ID": 8868,
+    "_event_type": "DNS_REQUEST",
+    "_ts": "{{ date }} 16:49:33"
+  },
+  {
+    "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k NetworkService -s TermService",
+    "CREATION_TIME": 1734629976659,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+    "HASH": "add683a6910abbbf0e28b557fad0ba998166394932ae2aca069d9aa19ea8fe88",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "38.54.50.121",
+          "PORT": 56047
+        },
+        "TIMESTAMP": 1767718189737
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "38.54.50.121",
+          "PORT": 56559
+        },
+        "TIMESTAMP": 1767718190864
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "37.187.28.46",
+          "PORT": 44802
+        },
+        "TIMESTAMP": 1767718192398
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "3.70.126.251",
+          "PORT": 53269
+        },
+        "TIMESTAMP": 1767718211496
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "194.180.49.39",
+          "PORT": 58673
+        },
+        "TIMESTAMP": 1767718212303
+      }
+    ],
+    "PARENT_PROCESS_ID": 624,
+    "PROCESS_ID": 724,
+    "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE",
+    "_event_type": "NETWORK_CONNECTIONS",
+    "_ts": "{{ date }} 16:50:13"
+  },
+  {
+    "COMMAND_LINE": "C:\\Windows\\system32\\svchost.exe -k NetworkService -p -s Dnscache",
+    "CREATION_TIME": 1734629977475,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\system32\\svchost.exe",
+    "HASH": "add683a6910abbbf0e28b557fad0ba998166394932ae2aca069d9aa19ea8fe88",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.0.1",
+          "PORT": 53
+        },
+        "IS_OUTGOING": 1,
+        "PROTOCOL": "udp4",
+        "SOURCE": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 52207
+        },
+        "TIMESTAMP": 1767718194695
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.0.1",
+          "PORT": 53
+        },
+        "IS_OUTGOING": 1,
+        "PROTOCOL": "udp4",
+        "SOURCE": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 63334
+        },
+        "TIMESTAMP": 1767718194695
+      }
+    ],
+    "PARENT_PROCESS_ID": 624,
+    "PROCESS_ID": 1912,
+    "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE",
+    "_event_type": "NETWORK_CONNECTIONS",
+    "_ts": "{{ date }} 16:50:13"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "194.180.49.39",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "",
+        "TargetUserName": "ADMINISTRATOR",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "9808965",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:50:12.9773416Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:50:13"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "3.70.126.251",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "",
+        "TargetUserName": "ADMINISTRATOR",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "9808966",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:50:13.0505457Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:50:13"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "109.205.211.41",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "",
+        "TargetUserName": "ADMIN",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "9808967",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:50:14.0735754Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:50:15"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "194.180.49.40",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "",
+        "TargetUserName": "ADMIN",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "9808968",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:50:27.2322006Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:50:28"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "106.0.54.50",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "",
+        "TargetUserName": "ADMINISTRATOR",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "9808969",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:50:35.3802798Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:50:36"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "37.187.28.46",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc0000064",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "",
+        "TargetUserName": "RECEPTION",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "DESKTOP-C2A1841",
+        "Correlation": {
+          "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "9808970",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "16480"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:50:37.0935824Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:50:38"
+  },
+  {
+    "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k NetworkService -s TermService",
+    "CREATION_TIME": 1734629976659,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+    "HASH": "add683a6910abbbf0e28b557fad0ba998166394932ae2aca069d9aa19ea8fe88",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "109.205.211.41",
+          "PORT": 59473
+        },
+        "TIMESTAMP": 1767718213412
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "194.180.49.40",
+          "PORT": 51963
+        },
+        "TIMESTAMP": 1767718226553
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "106.0.54.50",
+          "PORT": 54062
+        },
+        "TIMESTAMP": 1767718233983
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.200",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "37.187.28.46",
+          "PORT": 6423
+        },
+        "TIMESTAMP": 1767718235921
+      }
+    ],
+    "PARENT_PROCESS_ID": 624,
+    "PROCESS_ID": 724,
+    "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE",
+    "_event_type": "NETWORK_CONNECTIONS",
+    "_ts": "{{ date }} 16:50:44"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "109.205.211.41",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc0000064",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "-",
+        "TargetUserName": "ADMIN",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+        "Correlation": {
+          "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "24344645",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "3300"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:50:31.1100313Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:50:32"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "194.180.49.39",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "-",
+        "TargetUserName": "ADMINISTRATOR",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+        "Correlation": {
+          "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "24344646",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "3300"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:50:38.5349998Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:50:39"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "194.180.49.40",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc000006a",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "-",
+        "TargetUserName": "ADMINISTRATOR",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+        "Correlation": {
+          "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "24344647",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "3300"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:50:46.3038319Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:50:47"
+  },
+  {
+    "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k termsvcs -s TermService",
+    "CREATION_TIME": 1765337246490,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+    "HASH": "d7f10571f58adbe122f615b869eb42b05286770148067cbf88054c38f1bca4c4",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "109.205.211.41",
+          "PORT": 50903
+        },
+        "TIMESTAMP": 1767718230465
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "194.180.49.39",
+          "PORT": 7849
+        },
+        "TIMESTAMP": 1767718237877
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "194.180.49.40",
+          "PORT": 51747
+        },
+        "TIMESTAMP": 1767718245633
+      }
+    ],
+    "PARENT_PROCESS_ID": 628,
+    "PROCESS_ID": 336,
+    "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE",
+    "_event_type": "NETWORK_CONNECTIONS",
+    "_ts": "{{ date }} 16:50:56"
+  },
+  {
+    "EVENT": {
+      "EventData": {
+        "AuthenticationPackageName": "NTLM",
+        "FailureReason": "%%2313",
+        "IpAddress": "102.88.137.82",
+        "IpPort": "0",
+        "KeyLength": "0",
+        "LmPackageName": "-",
+        "LogonProcessName": "NtLmSsp",
+        "LogonType": "3",
+        "ProcessId": "0x0",
+        "ProcessName": "-",
+        "Status": "0xc000006d",
+        "SubStatus": "0xc0000064",
+        "SubjectDomainName": "-",
+        "SubjectLogonId": "0x0",
+        "SubjectUserName": "-",
+        "SubjectUserSid": "S-1-0-0",
+        "TargetDomainName": "-",
+        "TargetUserName": "",
+        "TargetUserSid": "S-1-0-0",
+        "TransmittedServices": "-",
+        "WorkstationName": "-"
+      },
+      "System": {
+        "Channel": "Security",
+        "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+        "Correlation": {
+          "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+        },
+        "EventID": "4625",
+        "EventRecordID": "24344648",
+        "Execution": {
+          "ProcessID": "648",
+          "ThreadID": "3300"
+        },
+        "Keywords": "0x8010000000000000",
+        "Level": "0",
+        "Opcode": "0",
+        "Provider": {
+          "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "Security": "",
+        "Task": "12544",
+        "TimeCreated": {
+          "SystemTime": "2026-01-06T16:50:57.7740875Z"
+        },
+        "Version": "0",
+        "_event_id": "4625"
+      }
+    },
+    "_event_type": "WEL",
+    "_ts": "{{ date }} 16:50:58"
+  },
+  {
+    "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k termsvcs -s TermService",
+    "CREATION_TIME": 1765337246490,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+    "HASH": "d7f10571f58adbe122f615b869eb42b05286770148067cbf88054c38f1bca4c4",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "102.88.137.82",
+          "PORT": 57449
+        },
+        "TIMESTAMP": 1767718256845
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 3389
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "178.16.53.187",
+          "PORT": 10022
+        },
+        "TIMESTAMP": 1767718260644
+      }
+    ],
+    "PARENT_PROCESS_ID": 628,
+    "PROCESS_ID": 336,
+    "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE",
+    "_event_type": "NETWORK_CONNECTIONS",
+    "_ts": "{{ date }} 16:51:27"
+  },
+  {
+    "COMMAND_LINE": "C:\\Windows\\System32\\rundll32.exe",
+    "CREATION_TIME": 1765337249680,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\System32\\rundll32.exe",
+    "HASH": "02f6a04b3373f195152fb1b4aeafe25bf8ef4411dc020c2238c541bcc3dc309b",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "35.232.8.38",
+          "PORT": 80
+        },
+        "IS_OUTGOING": 1,
+        "PROTOCOL": "tcp4",
+        "SOURCE": {
+          "IP_ADDRESS": "10.128.15.201",
+          "PORT": 61833
+        },
+        "TIMESTAMP": 1767718260081
+      }
+    ],
+    "PARENT_PROCESS_ID": 2456,
+    "PROCESS_ID": 3316,
+    "USER_NAME": "NT AUTHORITY\\SYSTEM",
+    "_event_type": "NETWORK_CONNECTIONS",
+    "_ts": "{{ date }} 16:51:27"
+  }
+]

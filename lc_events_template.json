@@ -1,0 +1,3256 @@
+[
+  {
+    "event": {
+      "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k termsvcs -s TermService",
+      "CREATION_TIME": 1765337246490,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+      "HASH": "d7f10571f58adbe122f615b869eb42b05286770148067cbf88054c38f1bca4c4",
+      "NETWORK_ACTIVITY": [
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "102.88.137.82",
+            "PORT": 65466
+          },
+          "TIMESTAMP": 1767718149743
+        }
+      ],
+      "PARENT_PROCESS_ID": 628,
+      "PROCESS_ID": 336,
+      "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "4ce79a5b-c63d-499e-aa1d-988ea1c0d2dd",
+      "event_time": 1767718163144,
+      "event_type": "NETWORK_CONNECTIONS",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 2,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "dd49a136963a4dc3ec3536c2693c44eb",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "70e641ca3e9e3d59cddb76ca695d3d13"
+    },
+    "ts": "{{ date }} 16:49:23"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "109.205.211.41",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "-",
+          "TargetUserName": "ADMINISTRATOR",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+          "Correlation": {
+            "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "24344640",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "3300"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:49:23.8545351Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "1b4713d3-1ff0-4ec1-a516-fc31b2314d25",
+      "event_time": 1767718164863,
+      "event_type": "WEL",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 4,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "b18e9c3fb054370f54b40360695d3d14"
+    },
+    "ts": "{{ date }} 16:49:24"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "194.180.49.39",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc0000064",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "-",
+          "TargetUserName": "ADMIN",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+          "Correlation": {
+            "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "24344641",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "3300"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:49:34.7816997Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "38558566-0896-4854-9766-c0cfead02e0f",
+      "event_time": 1767718175780,
+      "event_type": "WEL",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 3,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "36051a926fb5f7892f05e7af695d3d1f"
+    },
+    "ts": "{{ date }} 16:49:35"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "194.180.49.40",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc0000064",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "-",
+          "TargetUserName": "ADMIN",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+          "Correlation": {
+            "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "24344642",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "3300"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:49:42.5563664Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "0c043f35-2962-4941-95b0-c1538064ced3",
+      "event_time": 1767718183567,
+      "event_type": "WEL",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 3,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "ebe40dd27c0e91984cf0b73c695d3d27"
+    },
+    "ts": "{{ date }} 16:49:43"
+  },
+  {
+    "event": {
+      "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k termsvcs -s TermService",
+      "CREATION_TIME": 1765337246490,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+      "HASH": "d7f10571f58adbe122f615b869eb42b05286770148067cbf88054c38f1bca4c4",
+      "NETWORK_ACTIVITY": [
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "109.205.211.41",
+            "PORT": 51113
+          },
+          "TIMESTAMP": 1767718163206
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "194.180.49.39",
+            "PORT": 31813
+          },
+          "TIMESTAMP": 1767718174137
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "194.180.49.40",
+            "PORT": 52976
+          },
+          "TIMESTAMP": 1767718181895
+        }
+      ],
+      "PARENT_PROCESS_ID": 628,
+      "PROCESS_ID": 336,
+      "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "f7b09a19-249c-449b-966f-c0d1ee5bf4c4",
+      "event_time": 1767718194325,
+      "event_type": "NETWORK_CONNECTIONS",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 11,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "dd49a136963a4dc3ec3536c2693c44eb",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "ed74b8c0b6308ce69b75c994695d3d32"
+    },
+    "ts": "{{ date }} 16:49:54"
+  },
+  {
+    "event": {
+      "COMMAND_LINE": "C:\\Windows\\System32\\rundll32.exe",
+      "CREATION_TIME": 1765337249680,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\System32\\rundll32.exe",
+      "HASH": "02f6a04b3373f195152fb1b4aeafe25bf8ef4411dc020c2238c541bcc3dc309b",
+      "NETWORK_ACTIVITY": [
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "35.232.8.38",
+            "PORT": 80
+          },
+          "IS_OUTGOING": 1,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 61832
+          },
+          "TIMESTAMP": 1767718179048
+        }
+      ],
+      "PARENT_PROCESS_ID": 2456,
+      "PROCESS_ID": 3316,
+      "USER_NAME": "NT AUTHORITY\\SYSTEM"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "03e557c9-edd5-4a4b-843c-b6f4f163dd97",
+      "event_time": 1767718194325,
+      "event_type": "NETWORK_CONNECTIONS",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 12,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "ba890b53ba77a3dfb43f70a8693c44ea",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "24d4768d89458e0d764c920d695d3d32"
+    },
+    "ts": "{{ date }} 16:49:54"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "103.230.85.243",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "-",
+          "TargetUserName": "ADMINISTRATOR",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+          "Correlation": {
+            "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "24344643",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "3300"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:50:04.2019393Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "15c3f664-3871-4f4c-ba0c-8bca0f9a6a31",
+      "event_time": 1767718205193,
+      "event_type": "WEL",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 144,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "d725f2c0cb41ec88997f1ec0695d3d3d"
+    },
+    "ts": "{{ date }} 16:50:05"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "102.88.137.82",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc0000064",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "-",
+          "TargetUserName": "PC",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+          "Correlation": {
+            "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "24344644",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "3300"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:50:04.3588643Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "c3fdeeef-f8ec-41e7-b711-86a9c779359a",
+      "event_time": 1767718205193,
+      "event_type": "WEL",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 152,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "fbbcf8af7079a09d3bcb8f76695d3d3d"
+    },
+    "ts": "{{ date }} 16:50:05"
+  },
+  {
+    "event": {
+      "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k termsvcs -s TermService",
+      "CREATION_TIME": 1765337246490,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+      "HASH": "d7f10571f58adbe122f615b869eb42b05286770148067cbf88054c38f1bca4c4",
+      "NETWORK_ACTIVITY": [
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "103.230.85.243",
+            "PORT": 64012
+          },
+          "TIMESTAMP": 1767718202099
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "102.88.137.82",
+            "PORT": 63507
+          },
+          "TIMESTAMP": 1767718203427
+        }
+      ],
+      "PARENT_PROCESS_ID": 628,
+      "PROCESS_ID": 336,
+      "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "3981c5e4-4408-462f-8e40-5730d3b6bf49",
+      "event_time": 1767718225569,
+      "event_type": "NETWORK_CONNECTIONS",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 4,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "dd49a136963a4dc3ec3536c2693c44eb",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "abe7f2ac21b184b9c78bfd66695d3d51"
+    },
+    "ts": "{{ date }} 16:50:25"
+  },
+  {
+    "event": {
+      "COMMAND_LINE": "C:\\Windows\\system32\\svchost.exe -k LocalService -s w32time",
+      "CREATION_TIME": 1765337246563,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\system32\\svchost.exe",
+      "HASH": "d7f10571f58adbe122f615b869eb42b05286770148067cbf88054c38f1bca4c4",
+      "NETWORK_ACTIVITY": [
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "169.254.169.254",
+            "PORT": 123
+          },
+          "IS_OUTGOING": 1,
+          "PROTOCOL": "udp4",
+          "SOURCE": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 123
+          },
+          "TIMESTAMP": 1767718210120
+        }
+      ],
+      "PARENT_PROCESS_ID": 628,
+      "PROCESS_ID": 600,
+      "USER_NAME": "NT AUTHORITY\\LOCAL SERVICE"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "7808866e-ed59-48ad-a30c-e703fc5e708f",
+      "event_time": 1767718225569,
+      "event_type": "NETWORK_CONNECTIONS",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 4,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "dbafc509e16fe23152420725693c44ec",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "efd3860baf4508f7cdb6138d695d3d51"
+    },
+    "ts": "{{ date }} 16:50:25"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "3.70.126.251",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "",
+          "TargetUserName": "ADMINISTRATOR",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "9808957",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:49:23.9414068Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "cb074929-5c31-4888-8e8c-f04c2fca6c13",
+      "event_time": 1767718164946,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 6,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "a46aadcab4ce31ada6cb4d2f695d3d14"
+    },
+    "ts": "{{ date }} 16:49:24"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "194.180.49.40",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "",
+          "TargetUserName": "ADMINISTRATOR",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "9808958",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:49:25.3341153Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "6afd3917-1217-4970-a155-03f3ed0bd684",
+      "event_time": 1767718166334,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 7,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "152dbe0aa92b5c5a75065f84695d3d16"
+    },
+    "ts": "{{ date }} 16:49:26"
+  },
+  {
+    "event": {
+      "BASE_ADDRESS": 140701616635904,
+      "COMMAND_LINE": "C:\\Windows\\servicing\\TrustedInstaller.exe",
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\servicing\\TrustedInstaller.exe",
+      "HASH": "7f0e3e2682a24a6b27484226cc0c7b30f837ea08b01f82c7b7ac094bf0a88ce5",
+      "MEMORY_USAGE": 7479296,
+      "PARENT": {
+        "FILE_IS_SIGNED": 1,
+        "FILE_PATH": "\\Device\\HarddiskVolume3\\Windows\\System32\\services.exe",
+        "HASH": "dfbea9e8c316d9bc118b454b0c722cd674c30d0a256340200e2c3a7480cba674",
+        "MEMORY_USAGE": 8495104,
+        "PARENT_ATOM": "debc7489cdb739c3ba5392a76930948d",
+        "PARENT_PROCESS_ID": 496,
+        "PROCESS_ID": 624,
+        "THIS_ATOM": "7ee3b7d0306638b8931a0fb46930948d",
+        "THREADS": 8,
+        "TIMESTAMP": 1764791437663,
+        "USER_NAME": "NT AUTHORITY\\SYSTEM"
+      },
+      "PARENT_PROCESS_ID": 624,
+      "PROCESS_ID": 17972,
+      "THREADS": 8,
+      "USER_NAME": "NT AUTHORITY\\SYSTEM"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "63f1b02f-bef9-4f7c-9b97-0d1a49d0ee65",
+      "event_time": 1767718170510,
+      "event_type": "NEW_PROCESS",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 274,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "7ee3b7d0306638b8931a0fb46930948d",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "799ff16f3e08533f6afe7c75695d3d1a"
+    },
+    "ts": "{{ date }} 16:49:30"
+  },
+  {
+    "event": {
+      "ENVIRONMENT_VARIABLES": [
+        "ALLUSERSPROFILE=C:\\ProgramData",
+        "APPDATA=C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming",
+        "CommonProgramFiles=C:\\Program Files\\Common Files",
+        "CommonProgramFiles(x86)=C:\\Program Files (x86)\\Common Files",
+        "CommonProgramW6432=C:\\Program Files\\Common Files",
+        "COMPUTERNAME=DESKTOP-C2A1841",
+        "ComSpec=C:\\Windows\\system32\\cmd.exe",
+        "DriverData=C:\\Windows\\System32\\Drivers\\DriverData",
+        "GooGetRoot=C:\\ProgramData\\GooGet",
+        "LOCALAPPDATA=C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local",
+        "NUMBER_OF_PROCESSORS=2",
+        "OS=Windows_NT",
+        "Path=C:\\Program Files\\Python310\\Scripts\\;C:\\Program Files\\Python310\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\ProgramData\\GooGet;C:\\Program Files\\Google\\Compute Engine\\metadata_scripts;C:\\Program Files\\Google\\Compute Engine\\sysprep;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps",
+        "PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW",
+        "PROCESSOR_ARCHITECTURE=AMD64",
+        "PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 79 Stepping 0, GenuineIntel",
+        "PROCESSOR_LEVEL=6",
+        "PROCESSOR_REVISION=4f00",
+        "ProgramData=C:\\ProgramData",
+        "ProgramFiles=C:\\Program Files",
+        "ProgramFiles(x86)=C:\\Program Files (x86)",
+        "ProgramW6432=C:\\Program Files",
+        "PSModulePath=%ProgramFiles%\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+        "PUBLIC=C:\\Users\\Public",
+        "SystemDrive=C:",
+        "SystemRoot=C:\\Windows",
+        "TEMP=C:\\Windows\\TEMP",
+        "TMP=C:\\Windows\\TEMP",
+        "USERDOMAIN=WORKGROUP",
+        "USERNAME=DESKTOP-C2A1841$",
+        "USERPROFILE=C:\\Windows\\system32\\config\\systemprofile",
+        "windir=C:\\Windows"
+      ],
+      "PROCESS_ID": 17972
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "f7cd1127-6c4f-4e98-9c95-fce3a67ce68f",
+      "event_time": 1767718170775,
+      "event_type": "PROCESS_ENVIRONMENT",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 20,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "799ff16f3e08533f6afe7c75695d3d1a",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "412f31cca932e36641be1b8e695d3d1a"
+    },
+    "ts": "{{ date }} 16:49:30"
+  },
+  {
+    "event": {
+      "BASE_ADDRESS": 140700965601280,
+      "COMMAND_LINE": "C:\\Windows\\winsxs\\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.19041.1940_none_7dd80d767cb5c7b0\\TiWorker.exe -Embedding",
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\winsxs\\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.19041.1940_none_7dd80d767cb5c7b0\\TiWorker.exe",
+      "HASH": "b87f907f63f3b6059759dbfbcef2a10a5745fa1bc35bdf28c300553922926864",
+      "MEMORY_USAGE": 16101376,
+      "PARENT": {
+        "BASE_ADDRESS": 140700938862592,
+        "COMMAND_LINE": "C:\\Windows\\system32\\svchost.exe -k DcomLaunch -p",
+        "CREATION_TIME": 1734629975978,
+        "FILE_IS_SIGNED": 1,
+        "FILE_PATH": "C:\\Windows\\system32\\svchost.exe",
+        "HASH": "add683a6910abbbf0e28b557fad0ba998166394932ae2aca069d9aa19ea8fe88",
+        "MEMORY_USAGE": 230592512,
+        "PARENT_ATOM": "7ee3b7d0306638b8931a0fb46930948d",
+        "PARENT_PROCESS_ID": 624,
+        "PROCESS_ID": 752,
+        "THIS_ATOM": "e0b0d193a2bb84b39c2178506930948d",
+        "THREADS": 11,
+        "TIMESTAMP": 1764791437772,
+        "USER_NAME": "NT AUTHORITY\\SYSTEM"
+      },
+      "PARENT_PROCESS_ID": 752,
+      "PROCESS_ID": 13864,
+      "THREADS": 6,
+      "USER_NAME": "NT AUTHORITY\\SYSTEM"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "b80e991d-2a9c-4e38-b61f-55be6178249d",
+      "event_time": 1767718170541,
+      "event_type": "NEW_PROCESS",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 261,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "e0b0d193a2bb84b39c2178506930948d",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "6db6dca6865989f9de823ff9695d3d1a"
+    },
+    "ts": "{{ date }} 16:49:30"
+  },
+  {
+    "event": {
+      "ENVIRONMENT_VARIABLES": [
+        "ALLUSERSPROFILE=C:\\ProgramData",
+        "APPDATA=C:\\Windows\\system32\\config\\systemprofile\\AppData\\Roaming",
+        "CommonProgramFiles=C:\\Program Files\\Common Files",
+        "CommonProgramFiles(x86)=C:\\Program Files (x86)\\Common Files",
+        "CommonProgramW6432=C:\\Program Files\\Common Files",
+        "COMPUTERNAME=DESKTOP-C2A1841",
+        "ComSpec=C:\\Windows\\system32\\cmd.exe",
+        "DriverData=C:\\Windows\\System32\\Drivers\\DriverData",
+        "GooGetRoot=C:\\ProgramData\\GooGet",
+        "LOCALAPPDATA=C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local",
+        "NUMBER_OF_PROCESSORS=2",
+        "OS=Windows_NT",
+        "Path=C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\ProgramData\\GooGet;C:\\Program Files\\Google\\Compute Engine\\metadata_scripts;C:\\Program Files\\Google\\Compute Engine\\sysprep;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps",
+        "PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+        "PROCESSOR_ARCHITECTURE=AMD64",
+        "PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 79 Stepping 0, GenuineIntel",
+        "PROCESSOR_LEVEL=6",
+        "PROCESSOR_REVISION=4f00",
+        "ProgramData=C:\\ProgramData",
+        "ProgramFiles=C:\\Program Files",
+        "ProgramFiles(x86)=C:\\Program Files (x86)",
+        "ProgramW6432=C:\\Program Files",
+        "PSModulePath=%ProgramFiles%\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+        "PUBLIC=C:\\Users\\Public",
+        "SystemDrive=C:",
+        "SystemRoot=C:\\Windows",
+        "TEMP=C:\\Windows\\TEMP",
+        "TMP=C:\\Windows\\TEMP",
+        "USERDOMAIN=WORKGROUP",
+        "USERNAME=DESKTOP-C2A1841$",
+        "USERPROFILE=C:\\Windows\\system32\\config\\systemprofile",
+        "windir=C:\\Windows"
+      ],
+      "PROCESS_ID": 13864
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "854ab78d-7ca1-4eef-a430-3ce848c68093",
+      "event_time": 1767718170807,
+      "event_type": "PROCESS_ENVIRONMENT",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 52,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "6db6dca6865989f9de823ff9695d3d1a",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "a118fda911995074512c05e0695d3d1a"
+    },
+    "ts": "{{ date }} 16:49:30"
+  },
+  {
+    "event": {
+      "FILE_PATH": "C:\\Windows\\System32\\sru\\SRU.log",
+      "PROCESS_ID": 2984
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "b7dc2c25-df6d-4fbe-b330-9ae0adc102c3",
+      "event_time": 1767718158885,
+      "event_type": "FILE_MODIFIED",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 12368,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "41d3bc2640de83dbfbc4ef3e69309498",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "a53c3169587c29548ff9ef76695d3d1b"
+    },
+    "ts": "{{ date }} 16:49:18"
+  },
+  {
+    "event": {
+      "FILE_PATH": "C:\\Windows\\System32\\sru\\SRUDB.jfm",
+      "PROCESS_ID": 2984
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "4d57e29e-6c75-4020-baf6-b075c5f43765",
+      "event_time": 1767718158885,
+      "event_type": "FILE_MODIFIED",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 12370,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "41d3bc2640de83dbfbc4ef3e69309498",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "5cb187d9ad245bc01dbe65b8695d3d1b"
+    },
+    "ts": "{{ date }} 16:49:18"
+  },
+  {
+    "event": {
+      "FILE_PATH": "C:\\Windows\\System32\\sru\\SRUDB.dat",
+      "PROCESS_ID": 2984
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "03f9a2ce-3120-484c-ab07-edeac9e7e905",
+      "event_time": 1767718158901,
+      "event_type": "FILE_MODIFIED",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 12354,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "41d3bc2640de83dbfbc4ef3e69309498",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "b920e3a07e66809b21ac9e32695d3d1b"
+    },
+    "ts": "{{ date }} 16:49:18"
+  },
+  {
+    "event": {
+      "FILE_PATH": "C:\\Windows\\System32\\sru\\SRUDB.dat",
+      "PROCESS_ID": 2984
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "15a910cd-73d5-4192-87c2-9645832dd5ad",
+      "event_time": 1767718158963,
+      "event_type": "FILE_MODIFIED",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 12292,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "41d3bc2640de83dbfbc4ef3e69309498",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "b7909d864e080ea34b3d0a95695d3d1b"
+    },
+    "ts": "{{ date }} 16:49:18"
+  },
+  {
+    "event": {
+      "FILE_PATH": "C:\\Windows\\Logs\\CBS\\CBS.log",
+      "PROCESS_ID": 17972
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "c2117b6f-990f-4888-b4ff-f60360a2712c",
+      "event_time": 1767718170526,
+      "event_type": "FILE_MODIFIED",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 729,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "799ff16f3e08533f6afe7c75695d3d1a",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "1dfb50986aa2611c8a42936d695d3d1b"
+    },
+    "ts": "{{ date }} 16:49:30"
+  },
+  {
+    "event": {
+      "FILE_PATH": "C:\\Windows\\Logs\\CBS\\CBS.log",
+      "PROCESS_ID": 13864
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "04d1bd51-3f6e-47ae-a061-8464f283e041",
+      "event_time": 1767718170572,
+      "event_type": "FILE_MODIFIED",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 684,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "6db6dca6865989f9de823ff9695d3d1a",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "ee0754ea796e5eab75ef512e695d3d1b"
+    },
+    "ts": "{{ date }} 16:49:30"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "Negotiate",
+          "ElevatedToken": "%%1842",
+          "ImpersonationLevel": "%%1833",
+          "IpAddress": "-",
+          "IpPort": "-",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonGuid": "{00000000-0000-0000-0000-000000000000}",
+          "LogonProcessName": "Advapi",
+          "LogonType": "5",
+          "ProcessId": "0x270",
+          "ProcessName": "C:\\Windows\\System32\\services.exe",
+          "RestrictedAdminMode": "-",
+          "SubjectDomainName": "WORKGROUP",
+          "SubjectLogonId": "0x3e7",
+          "SubjectUserName": "DESKTOP-C2A1841$",
+          "SubjectUserSid": "S-1-5-18",
+          "TargetDomainName": "NT AUTHORITY",
+          "TargetLinkedLogonId": "0x0",
+          "TargetLogonId": "0x3e7",
+          "TargetOutboundDomainName": "-",
+          "TargetOutboundUserName": "-",
+          "TargetUserName": "SYSTEM",
+          "TargetUserSid": "S-1-5-18",
+          "TransmittedServices": "-",
+          "VirtualAccount": "%%1843",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4624",
+          "EventRecordID": "9808959",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8020000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:49:30.5178847Z"
+          },
+          "Version": "2",
+          "_event_id": "4624"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "74f364ba-c9e0-4054-824a-79f2ccddf954",
+      "event_time": 1767718171516,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 35,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "cd61a6e84bfd4ba2b641b613695d3d1b"
+    },
+    "ts": "{{ date }} 16:49:31"
+  },
+  {
+    "event": {
+      "DLL": "%SystemRoot%\\system32\\appxdeploymentserver.dll",
+      "EXECUTABLE": "%systemroot%\\system32\\svchost.exe -k wsappx -p",
+      "FILE_IS_SIGNED": 1,
+      "HASH": "88245d62c16b930ee1e2cd1284c4c7ed69ba228f89ebefb2863c4278d0fcf874",
+      "PROCESS_ID": 0,
+      "SVC_DISPLAY_NAME": "AppX Deployment Service (AppXSVC)",
+      "SVC_NAME": "AppXSvc",
+      "SVC_STATE": 1,
+      "SVC_TYPE": 48
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "ee2a831e-70fe-462d-b8a3-b14e2af3d90c",
+      "event_time": 1767718176725,
+      "event_type": "SERVICE_CHANGE",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 16,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "b84b8b5e2cba10ca700b8750695d3d20"
+    },
+    "ts": "{{ date }} 16:49:36"
+  },
+  {
+    "event": {
+      "DLL": "%SystemRoot%\\System32\\gpsvc.dll",
+      "EXECUTABLE": "%systemroot%\\system32\\svchost.exe -k netsvcs -p",
+      "FILE_IS_SIGNED": 1,
+      "HASH": "49545521a549b9f045cf2dee0eda41deeab3f37e20735d7f905276b5f8980481",
+      "PROCESS_ID": 10840,
+      "SVC_DISPLAY_NAME": "Group Policy Client",
+      "SVC_NAME": "gpsvc",
+      "SVC_STATE": 4,
+      "SVC_TYPE": 48
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "d050d983-7a4b-409d-8686-f72c65fef729",
+      "event_time": 1767718176725,
+      "event_type": "SERVICE_CHANGE",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 16,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "f4430f27368dd957bbe00143695d3d20"
+    },
+    "ts": "{{ date }} 16:49:36"
+  },
+  {
+    "event": {
+      "EXECUTABLE": "%SystemRoot%\\servicing\\TrustedInstaller.exe",
+      "FILE_IS_SIGNED": 1,
+      "HASH": "7f0e3e2682a24a6b27484226cc0c7b30f837ea08b01f82c7b7ac094bf0a88ce5",
+      "PROCESS_ID": 17972,
+      "SVC_DISPLAY_NAME": "Windows Modules Installer",
+      "SVC_NAME": "TrustedInstaller",
+      "SVC_STATE": 4,
+      "SVC_TYPE": 16
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "2a044fdc-0764-416f-addd-08db3633c8e5",
+      "event_time": 1767718176725,
+      "event_type": "SERVICE_CHANGE",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 18,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "8d1baf25f253eb4cc0569647695d3d20"
+    },
+    "ts": "{{ date }} 16:49:36"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "201.150.150.54",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc0000064",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "",
+          "TargetUserName": "SERVER",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "9808961",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:49:39.1102092Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "5089b8d7-0d3b-4faf-ae5a-f4fdfac4578c",
+      "event_time": 1767718180103,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 6,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "00f04a8d110afc43890ca14d695d3d24"
+    },
+    "ts": "{{ date }} 16:49:40"
+  },
+  {
+    "event": {
+      "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k NetworkService -s TermService",
+      "CREATION_TIME": 1734629976659,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+      "HASH": "add683a6910abbbf0e28b557fad0ba998166394932ae2aca069d9aa19ea8fe88",
+      "NETWORK_ACTIVITY": [
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "194.180.49.39",
+            "PORT": 45796
+          },
+          "TIMESTAMP": 1767718151661
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "3.70.126.251",
+            "PORT": 52933
+          },
+          "TIMESTAMP": 1767718163212
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "194.180.49.40",
+            "PORT": 58854
+          },
+          "TIMESTAMP": 1767718164665
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "201.150.150.54",
+            "PORT": 52382
+          },
+          "TIMESTAMP": 1767718178147
+        }
+      ],
+      "PARENT_PROCESS_ID": 624,
+      "PROCESS_ID": 724,
+      "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "1f4ded7d-4299-4fd9-aeb6-8c45125f90f4",
+      "event_time": 1767718182045,
+      "event_type": "NETWORK_CONNECTIONS",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 10,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "2d13b0fc1180529417ce48b26930948d",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "0776011d3bbce444fafa27d5695d3d26"
+    },
+    "ts": "{{ date }} 16:49:42"
+  },
+  {
+    "event": {
+      "FILE_PATH": "C:\\Windows\\Prefetch\\TRUSTEDINSTALLER.EXE-766EFF52.pf",
+      "PROCESS_ID": 1748
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "3410ae56-e918-43c4-997d-2c1f9b5cc2f6",
+      "event_time": 1767718180557,
+      "event_type": "FILE_MODIFIED",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 6874,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "5a918e4bf5060936e6f60ba169309498",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "24b1a0d831d6572b283ca57a695d3d2b"
+    },
+    "ts": "{{ date }} 16:49:40"
+  },
+  {
+    "event": {
+      "FILE_PATH": "C:\\Windows\\Prefetch\\TIWORKER.EXE-252288BE.pf",
+      "PROCESS_ID": 1748
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "3a252dba-b515-4924-91f5-b4bf67a0970b",
+      "event_time": 1767718180620,
+      "event_type": "FILE_MODIFIED",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 6812,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "5a918e4bf5060936e6f60ba169309498",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "f16e9b2bf0d6061c394639da695d3d2b"
+    },
+    "ts": "{{ date }} 16:49:40"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "38.54.50.121",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "WIN-QPBU6973Q4A",
+          "TargetUserName": "Administrator",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "WIN-QPBU6973Q4A"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "9808962",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:49:50.5402552Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "8c087acb-28f3-44cd-bdc6-6054bb20caa9",
+      "event_time": 1767718191537,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 6,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "d6aaeb437b4129bc720abab6695d3d2f"
+    },
+    "ts": "{{ date }} 16:49:51"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "38.54.50.121",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "WIN-QPBU6973Q4A",
+          "TargetUserName": "Administrator",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "WIN-QPBU6973Q4A"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "9808963",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:49:51.6649500Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "09945a4c-af9f-4df9-aeb1-57bb0808ce7b",
+      "event_time": 1767718192663,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 15,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "e8daa0d264d8a8a4cba7fe10695d3d30"
+    },
+    "ts": "{{ date }} 16:49:52"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "37.187.28.46",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc0000064",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "",
+          "TargetUserName": "SERVICES",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "9808964",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:49:54.3217685Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "382374d7-5b6a-486a-bbaf-6d7691bd2adf",
+      "event_time": 1767718195335,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 6,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "8ff91e8caf273a3017a8c990695d3d33"
+    },
+    "ts": "{{ date }} 16:49:55"
+  },
+  {
+    "event": {
+      "DNS_TYPE": 28,
+      "DOMAIN_NAME": "wpad",
+      "ERROR": 9003,
+      "PROCESS_ID": 11944,
+      "THREAD_ID": 8868
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "d08555a3-1a02-484f-9eaf-0b6a71a8e3ec",
+      "event_time": 1767718173725,
+      "event_type": "DNS_REQUEST",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 21993,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "68de92747f40c8d79a0187ee695d3d33"
+    },
+    "ts": "{{ date }} 16:49:33"
+  },
+  {
+    "event": {
+      "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k NetworkService -s TermService",
+      "CREATION_TIME": 1734629976659,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+      "HASH": "add683a6910abbbf0e28b557fad0ba998166394932ae2aca069d9aa19ea8fe88",
+      "NETWORK_ACTIVITY": [
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "38.54.50.121",
+            "PORT": 56047
+          },
+          "TIMESTAMP": 1767718189737
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "38.54.50.121",
+            "PORT": 56559
+          },
+          "TIMESTAMP": 1767718190864
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "37.187.28.46",
+            "PORT": 44802
+          },
+          "TIMESTAMP": 1767718192398
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "3.70.126.251",
+            "PORT": 53269
+          },
+          "TIMESTAMP": 1767718211496
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "194.180.49.39",
+            "PORT": 58673
+          },
+          "TIMESTAMP": 1767718212303
+        }
+      ],
+      "PARENT_PROCESS_ID": 624,
+      "PROCESS_ID": 724,
+      "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "2aed8e59-54b8-4e7b-9a5f-60d00eb79470",
+      "event_time": 1767718213319,
+      "event_type": "NETWORK_CONNECTIONS",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 39,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "2d13b0fc1180529417ce48b26930948d",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "c9a376a4c61cd5eef748712b695d3d45"
+    },
+    "ts": "{{ date }} 16:50:13"
+  },
+  {
+    "event": {
+      "COMMAND_LINE": "C:\\Windows\\system32\\svchost.exe -k NetworkService -p -s Dnscache",
+      "CREATION_TIME": 1734629977475,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\system32\\svchost.exe",
+      "HASH": "add683a6910abbbf0e28b557fad0ba998166394932ae2aca069d9aa19ea8fe88",
+      "NETWORK_ACTIVITY": [
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.0.1",
+            "PORT": 53
+          },
+          "IS_OUTGOING": 1,
+          "PROTOCOL": "udp4",
+          "SOURCE": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 52207
+          },
+          "TIMESTAMP": 1767718194695
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.0.1",
+            "PORT": 53
+          },
+          "IS_OUTGOING": 1,
+          "PROTOCOL": "udp4",
+          "SOURCE": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 63334
+          },
+          "TIMESTAMP": 1767718194695
+        }
+      ],
+      "PARENT_PROCESS_ID": 624,
+      "PROCESS_ID": 1912,
+      "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "cc897a53-52ba-47aa-b838-17939a0109ce",
+      "event_time": 1767718213319,
+      "event_type": "NETWORK_CONNECTIONS",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 96,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "bda734c40f43ffbb834beaf169309498",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "bc923560b9d6d0412949436b695d3d45"
+    },
+    "ts": "{{ date }} 16:50:13"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "194.180.49.39",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "",
+          "TargetUserName": "ADMINISTRATOR",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "9808965",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:50:12.9773416Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "8d66af55-4a53-4f15-81d0-fa1fd131f822",
+      "event_time": 1767718213975,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 30,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "113ca99b4d74ca9633fba1ba695d3d45"
+    },
+    "ts": "{{ date }} 16:50:13"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "3.70.126.251",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "",
+          "TargetUserName": "ADMINISTRATOR",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "9808966",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:50:13.0505457Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "21a37862-8b9c-4052-afd4-e7f818f90a2e",
+      "event_time": 1767718213975,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 71,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "e56de303e1ab9e7ee83a8093695d3d45"
+    },
+    "ts": "{{ date }} 16:50:13"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "109.205.211.41",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "",
+          "TargetUserName": "ADMIN",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "9808967",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:50:14.0735754Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "4bbbc132-8fe9-4ed4-a041-471a7879c00b",
+      "event_time": 1767718215069,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 12,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "1a2c3281016192b1c0969537695d3d47"
+    },
+    "ts": "{{ date }} 16:50:15"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "194.180.49.40",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "",
+          "TargetUserName": "ADMIN",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "9808968",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:50:27.2322006Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "3013cef0-2acf-4afa-b921-62325d277239",
+      "event_time": 1767718228227,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 16,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "ef4ee86e146467fe1ed5910b695d3d54"
+    },
+    "ts": "{{ date }} 16:50:28"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "106.0.54.50",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "",
+          "TargetUserName": "ADMINISTRATOR",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "9808969",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:50:35.3802798Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "a9813885-0d4c-4a28-afc9-c6ee0501ea48",
+      "event_time": 1767718236375,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 6,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "cd03d04802321cd9b09c6d1e695d3d5c"
+    },
+    "ts": "{{ date }} 16:50:36"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "37.187.28.46",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc0000064",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "",
+          "TargetUserName": "RECEPTION",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "DESKTOP-C2A1841",
+          "Correlation": {
+            "ActivityID": "{352b8892-aa45-0001-ddca-25f63c52db01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "9808970",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "16480"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:50:37.0935824Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "caf94266-0869-4b80-b35d-4571318b1274",
+      "event_time": 1767718238080,
+      "event_type": "WEL",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 6,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "1bb7e870b937134d462f7ca2695d3d5e"
+    },
+    "ts": "{{ date }} 16:50:38"
+  },
+  {
+    "event": {
+      "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k NetworkService -s TermService",
+      "CREATION_TIME": 1734629976659,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+      "HASH": "add683a6910abbbf0e28b557fad0ba998166394932ae2aca069d9aa19ea8fe88",
+      "NETWORK_ACTIVITY": [
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "109.205.211.41",
+            "PORT": 59473
+          },
+          "TIMESTAMP": 1767718213412
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "194.180.49.40",
+            "PORT": 51963
+          },
+          "TIMESTAMP": 1767718226553
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "106.0.54.50",
+            "PORT": 54062
+          },
+          "TIMESTAMP": 1767718233983
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.200",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "37.187.28.46",
+            "PORT": 6423
+          },
+          "TIMESTAMP": 1767718235921
+        }
+      ],
+      "PARENT_PROCESS_ID": 624,
+      "PROCESS_ID": 724,
+      "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "2a516976-a026-4c61-a09d-415ab65b938e",
+      "event_time": 1767718244623,
+      "event_type": "NETWORK_CONNECTIONS",
+      "ext_ip": "34.58.90.170",
+      "hostname": "desktop-c2a1841.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.200",
+      "latency": 5,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "2d13b0fc1180529417ce48b26930948d",
+      "plat": 268435456,
+      "sid": "c4ba6121-d13d-4871-82f8-4b5c5556761e",
+      "tags": [
+        "lc:testtag",
+        "ps-logging",
+        "windows",
+        "windows-desktop"
+      ],
+      "this": "0be6de84c0b0571b290dcbbe695d3d64"
+    },
+    "ts": "{{ date }} 16:50:44"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "109.205.211.41",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc0000064",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "-",
+          "TargetUserName": "ADMIN",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+          "Correlation": {
+            "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "24344645",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "3300"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:50:31.1100313Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "9e900521-3fdf-47d7-8bab-2ffe94de20b3",
+      "event_time": 1767718232108,
+      "event_type": "WEL",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 3,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "71e436120c53cf17a962a1e2695d3d58"
+    },
+    "ts": "{{ date }} 16:50:32"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "194.180.49.39",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "-",
+          "TargetUserName": "ADMINISTRATOR",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+          "Correlation": {
+            "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "24344646",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "3300"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:50:38.5349998Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "d8c21bdf-61a6-4a6b-938b-498ba8984997",
+      "event_time": 1767718239535,
+      "event_type": "WEL",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 3,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "1cff8e5956cd336de748ecbd695d3d5f"
+    },
+    "ts": "{{ date }} 16:50:39"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "194.180.49.40",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc000006a",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "-",
+          "TargetUserName": "ADMINISTRATOR",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+          "Correlation": {
+            "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "24344647",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "3300"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:50:46.3038319Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "910c9b90-4fc3-4b82-bc20-398c6cb36021",
+      "event_time": 1767718247291,
+      "event_type": "WEL",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 16,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "83e2f6ef77aa1972ca113224695d3d67"
+    },
+    "ts": "{{ date }} 16:50:47"
+  },
+  {
+    "event": {
+      "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k termsvcs -s TermService",
+      "CREATION_TIME": 1765337246490,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+      "HASH": "d7f10571f58adbe122f615b869eb42b05286770148067cbf88054c38f1bca4c4",
+      "NETWORK_ACTIVITY": [
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "109.205.211.41",
+            "PORT": 50903
+          },
+          "TIMESTAMP": 1767718230465
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "194.180.49.39",
+            "PORT": 7849
+          },
+          "TIMESTAMP": 1767718237877
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "194.180.49.40",
+            "PORT": 51747
+          },
+          "TIMESTAMP": 1767718245633
+        }
+      ],
+      "PARENT_PROCESS_ID": 628,
+      "PROCESS_ID": 336,
+      "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "24762b7b-c7a1-4368-86da-7a6e4300297d",
+      "event_time": 1767718256814,
+      "event_type": "NETWORK_CONNECTIONS",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 7,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "dd49a136963a4dc3ec3536c2693c44eb",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "11540ae6413e2b74201e9f38695d3d70"
+    },
+    "ts": "{{ date }} 16:50:56"
+  },
+  {
+    "event": {
+      "EVENT": {
+        "EventData": {
+          "AuthenticationPackageName": "NTLM",
+          "FailureReason": "%%2313",
+          "IpAddress": "102.88.137.82",
+          "IpPort": "0",
+          "KeyLength": "0",
+          "LmPackageName": "-",
+          "LogonProcessName": "NtLmSsp",
+          "LogonType": "3",
+          "ProcessId": "0x0",
+          "ProcessName": "-",
+          "Status": "0xc000006d",
+          "SubStatus": "0xc0000064",
+          "SubjectDomainName": "-",
+          "SubjectLogonId": "0x0",
+          "SubjectUserName": "-",
+          "SubjectUserSid": "S-1-0-0",
+          "TargetDomainName": "-",
+          "TargetUserName": "",
+          "TargetUserSid": "S-1-0-0",
+          "TransmittedServices": "-",
+          "WorkstationName": "-"
+        },
+        "System": {
+          "Channel": "Security",
+          "Computer": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0",
+          "Correlation": {
+            "ActivityID": "{55ae049b-37ef-0001-acbb-5be38469dc01}"
+          },
+          "EventID": "4625",
+          "EventRecordID": "24344648",
+          "Execution": {
+            "ProcessID": "648",
+            "ThreadID": "3300"
+          },
+          "Keywords": "0x8010000000000000",
+          "Level": "0",
+          "Opcode": "0",
+          "Provider": {
+            "Guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+            "Name": "Microsoft-Windows-Security-Auditing"
+          },
+          "Security": "",
+          "Task": "12544",
+          "TimeCreated": {
+            "SystemTime": "2026-01-06T16:50:57.7740875Z"
+          },
+          "Version": "0",
+          "_event_id": "4625"
+        }
+      }
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "77130291-7e97-41b2-9062-2c2a20bcbaa0",
+      "event_time": 1767718258783,
+      "event_type": "WEL",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 2,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "2e93005e90e88d0f055a94e9695d3d72"
+    },
+    "ts": "{{ date }} 16:50:58"
+  },
+  {
+    "event": {
+      "COMMAND_LINE": "C:\\Windows\\System32\\svchost.exe -k termsvcs -s TermService",
+      "CREATION_TIME": 1765337246490,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\System32\\svchost.exe",
+      "HASH": "d7f10571f58adbe122f615b869eb42b05286770148067cbf88054c38f1bca4c4",
+      "NETWORK_ACTIVITY": [
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "102.88.137.82",
+            "PORT": 57449
+          },
+          "TIMESTAMP": 1767718256845
+        },
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 3389
+          },
+          "IS_OUTGOING": 0,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "178.16.53.187",
+            "PORT": 10022
+          },
+          "TIMESTAMP": 1767718260644
+        }
+      ],
+      "PARENT_PROCESS_ID": 628,
+      "PROCESS_ID": 336,
+      "USER_NAME": "NT AUTHORITY\\NETWORK SERVICE"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "1df1759b-3ead-42ce-917d-9b08970c5e61",
+      "event_time": 1767718287087,
+      "event_type": "NETWORK_CONNECTIONS",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 3,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "dd49a136963a4dc3ec3536c2693c44eb",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "65196af9bac836991c0a0a56695d3d8f"
+    },
+    "ts": "{{ date }} 16:51:27"
+  },
+  {
+    "event": {
+      "COMMAND_LINE": "C:\\Windows\\System32\\rundll32.exe",
+      "CREATION_TIME": 1765337249680,
+      "FILE_IS_SIGNED": 1,
+      "FILE_PATH": "C:\\Windows\\System32\\rundll32.exe",
+      "HASH": "02f6a04b3373f195152fb1b4aeafe25bf8ef4411dc020c2238c541bcc3dc309b",
+      "NETWORK_ACTIVITY": [
+        {
+          "DESTINATION": {
+            "IP_ADDRESS": "35.232.8.38",
+            "PORT": 80
+          },
+          "IS_OUTGOING": 1,
+          "PROTOCOL": "tcp4",
+          "SOURCE": {
+            "IP_ADDRESS": "10.128.15.201",
+            "PORT": 61833
+          },
+          "TIMESTAMP": 1767718260081
+        }
+      ],
+      "PARENT_PROCESS_ID": 2456,
+      "PROCESS_ID": 3316,
+      "USER_NAME": "NT AUTHORITY\\SYSTEM"
+    },
+    "routing": {
+      "arch": 2,
+      "did": "",
+      "event_id": "4e73a893-2c55-42f1-a14e-5f9f9bb138fb",
+      "event_time": 1767718287087,
+      "event_type": "NETWORK_CONNECTIONS",
+      "ext_ip": "34.171.104.183",
+      "hostname": "windows-server-2022-aac9c41d-e0a3-4e7e-88b8-33936ab93238-0.c.lc-demo-infra.internal.",
+      "iid": "09774cc8-cb43-4164-abd3-87230031c142",
+      "int_ip": "10.128.15.201",
+      "latency": 3,
+      "moduleid": 2,
+      "oid": "aac9c41d-e0a3-4e7e-88b8-33936ab93238",
+      "parent": "ba890b53ba77a3dfb43f70a8693c44ea",
+      "plat": 268435456,
+      "sid": "17b8710a-7337-4e64-9c18-2955e86f2d0d",
+      "tags": [
+        "fim",
+        "lc:stable",
+        "ps-logging",
+        "server",
+        "windows"
+      ],
+      "this": "801cf3bf83dd2df96646fb0a695d3d8f"
+    },
+    "ts": "{{ date }} 16:51:27"
+  }
+]
